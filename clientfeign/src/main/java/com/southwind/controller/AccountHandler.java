@@ -19,33 +19,38 @@ public class AccountHandler {
     @Autowired
     private AccountFeign accountFeign;
 
-    @PostMapping("/login")
-    public String login(@RequestParam("username") String username, @RequestParam("password") String password, @RequestParam("type") String type, HttpSession session){
-        Account account = accountFeign.login(username,password,type);
-        String target = null;
-        if(account == null){
-            target = "login";
-        }else{
-            switch (type){
-                case "user":
-                    User user = convertUser(account);
-                    session.setAttribute("user",user);
-                    target = "redirect:/account/redirect/index";
-                    break;
-                case "admin":
-                    Admin admin = convertAdmin(account);
-                    session.setAttribute("admin",admin);
-                    target = "redirect:/account/redirect/main";
-                    break;
-            }
-        }
+    @PostMapping("/loginU")
+    public String loginU(@RequestParam("username") String username, @RequestParam("password") String password, HttpSession session){
+        Account account = accountFeign.login(username,password,"user");
+
+        User user = convertUser(account);
+        session.setAttribute("user",user);
+        String  target = "redirect:/account/redirect/index";
+
         return target;
     }
 
-    @GetMapping("/logout")
-    public String logout(HttpSession session){
+    @PostMapping("/loginA")
+    public String loginA(@RequestParam("username") String username, @RequestParam("password") String password, HttpSession session){
+        Account account = accountFeign.login(username,password,"admin");
+
+        Admin admin = convertAdmin(account);
+        session.setAttribute("admin",admin);
+        String target = "redirect:/account/redirect/main";
+
+        return target;
+    }
+
+    @GetMapping("/login/user")
+    public String userLogout(HttpSession session){
         session.invalidate();
-        return "login";
+        return "user_login";
+    }
+
+    @GetMapping("/login/admin")
+    public String adminLogout(HttpSession session){
+        session.invalidate();
+        return "admin_login";
     }
 
     @RequestMapping("/redirect/{target}")

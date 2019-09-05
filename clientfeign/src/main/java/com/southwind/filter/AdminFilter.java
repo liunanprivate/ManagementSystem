@@ -25,7 +25,7 @@ public class AdminFilter implements Filter {
         HttpSession session = request.getSession();
         Admin admin = (Admin) session.getAttribute("admin");
         if(admin == null){
-            response.sendRedirect("login.html");
+            response.sendRedirect("admin_login.html");
         }else{
             filterChain.doFilter(servletRequest,servletResponse);
         }

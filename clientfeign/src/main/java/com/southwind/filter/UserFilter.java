@@ -26,7 +26,7 @@ public class UserFilter implements Filter {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
         if(user == null){
-            response.sendRedirect("login.html");
+            response.sendRedirect("admin_login.html");
         }else{
             filterChain.doFilter(servletRequest,servletResponse);
         }

@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>管理员登录</title>
     <link rel="stylesheet" href="/layui/css/layui.css"  media="all">
 </head>
 <body>
 <div class="layui-container" style="width: 500px;height: 330px;margin-top: 130px;border: 1px solid #009688;padding-top: 60px;border-radius: 15px">
-    <form class="layui-form" action="/account/login" method="post">
+    <form class="layui-form" action="/account/loginA" method="post">
         <div class="layui-form-item">
             <label class="layui-form-label">用户名</label>
             <div class="layui-inline">
@@ -20,13 +20,13 @@
                 <input type="password" name="password" lay-verify="password" placeholder="请输入密码" autocomplete="off" class="layui-input">
             </div>
         </div>
-        <div class="layui-form-item" pane="">
-            <label class="layui-form-label">单选框</label>
-            <div class="layui-input-block">
-                <input type="radio" name="type" value="user" title="用户" checked="">
-                <input type="radio" name="type" value="admin" title="管理员">
-            </div>
-        </div>
+<!--        <div class="layui-form-item" pane="">-->
+<!--            <label class="layui-form-label">单选框</label>-->
+<!--            <div class="layui-input-block">-->
+<!--                <input type="radio" name="type" value="user" title="用户" checked="">-->
+<!--                <input type="radio" name="type" value="admin" title="管理员">-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="layui-form-item">
             <button class="layui-btn" lay-submit="" lay-filter="demo2" style="margin-left: 160px;">登陆</button>
         </div>
