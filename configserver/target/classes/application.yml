@@ -10,7 +10,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/liunanprivate/waimai.git #git仓库地址
+          uri: https://github.com/liunanprivate/ManagementSystem.git #git仓库地址
           searchPaths: config #仓库路径
           username: liunanprivate #git仓库用户名
           password: 19950310Liu. #git仓库密码
