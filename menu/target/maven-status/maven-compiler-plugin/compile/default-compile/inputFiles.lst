@@ -1,0 +1,7 @@
+/home/liu/IdeaProjects/waimai/menu/src/main/java/com/southwind/MenuApplication.java
+/home/liu/IdeaProjects/waimai/menu/src/main/java/com/southwind/entity/Menu.java
+/home/liu/IdeaProjects/waimai/menu/src/main/java/com/southwind/entity/MenuVO.java
+/home/liu/IdeaProjects/waimai/menu/src/main/java/com/southwind/entity/Type.java
+/home/liu/IdeaProjects/waimai/menu/src/main/java/com/southwind/repository/MenuRepository.java
+/home/liu/IdeaProjects/waimai/menu/src/main/java/com/southwind/repository/TypeRepository.java
+/home/liu/IdeaProjects/waimai/menu/src/main/java/com/southwind/controller/MenuHandler.java

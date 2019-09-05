@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="user" />
+        <module name="clientfeign" />
+        <module name="menu" />
+        <module name="order" />
+        <module name="account" />
+        <module name="configserver" />
+        <module name="registrycenter" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="account" target="1.8" />
+      <module name="clientfeign" target="1.8" />
+      <module name="configserver" target="1.8" />
+      <module name="menu" target="1.8" />
+      <module name="order" target="1.8" />
+      <module name="orderingsystem" target="1.8" />
+      <module name="registrycenter" target="1.8" />
+      <module name="user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account" options="-parameters" />
+      <module name="clientfeign" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="menu" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="registrycenter" options="-parameters" />
+      <module name="user" options="-parameters" />
+    </option>
+  </component>
+</project>

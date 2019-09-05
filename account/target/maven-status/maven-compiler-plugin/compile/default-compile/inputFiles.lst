@@ -1,0 +1,7 @@
+/home/liu/IdeaProjects/waimai/account/src/main/java/com/southwind/entity/User.java
+/home/liu/IdeaProjects/waimai/account/src/main/java/com/southwind/entity/Admin.java
+/home/liu/IdeaProjects/waimai/account/src/main/java/com/southwind/controller/AccountHandler.java
+/home/liu/IdeaProjects/waimai/account/src/main/java/com/southwind/entity/Account.java
+/home/liu/IdeaProjects/waimai/account/src/main/java/com/southwind/AccountApplication.java
+/home/liu/IdeaProjects/waimai/account/src/main/java/com/southwind/repository/UserRepository.java
+/home/liu/IdeaProjects/waimai/account/src/main/java/com/southwind/repository/AdminRepository.java

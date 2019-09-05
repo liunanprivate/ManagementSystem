@@ -1,0 +1,7 @@
+com/southwind/entity/Type.class
+com/southwind/repository/TypeRepository.class
+com/southwind/controller/MenuHandler.class
+com/southwind/entity/MenuVO.class
+com/southwind/entity/Menu.class
+com/southwind/repository/MenuRepository.class
+com/southwind/MenuApplication.class
